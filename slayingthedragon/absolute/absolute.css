@@ -1,0 +1,16 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative; /* relative to the parent */
+}
+
+.item-1 {
+  position: absolute; /* items given position absolute will be removed from the page, and the rest of the items will behave as if they do not exist */
+  top: -50px;
+  right: -50px;
+  /* bottom: 0; */
+  /* left: 0; */
+  z-index: -1; /* set the element behind the parent */
+}
