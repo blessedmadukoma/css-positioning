@@ -1,0 +1,23 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative; /* relative to the parent */
+}
+
+/* with this, I just built a fixed navbar */
+.item-1 {
+  position: fixed; /* fixed elements are always positioned relative to the parent element. It is better to use fixed for scrolling pages */
+  /* top: 0px; */
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+/* sticky */
+.item-5 {
+  position: sticky;
+  top: 50px;
+}
