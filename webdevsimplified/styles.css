@@ -1,0 +1,30 @@
+.parent {
+  /* position: relative; */
+  height: 200vh;
+}
+
+.child-one {
+  /* positive: static; is the default position */
+
+  /* position: relative; not best to  use (even with top, right, bottom, and left) because styling elements around it becomes difficult */
+  /* position: absoulte; not best to  use because styling elements around it becomes difficult */
+
+  /* position: absolute; best to use as it completely removes the element from the document flow and the document acts as if that element does not exist. Also useful if you want to stick an element in a position and you do not want the elements around it to move. In summary, the absolute position ABSOLUTELY positions the element inside of some parent component it can reference.
+  Using relative (for the parent element) and absolute (for the child element) together is a good way to position elements inside of a parent component. 
+   */
+
+  /* position: fixed; fixed position is fixed to the entire page and not the parent component. Elements with position fixed stay in the same place even when the user scrolls.
+  */
+
+  position: sticky; /* sticky position is the combination of relative and fixed. It is relative to the parent component until the user scrolls to a certain point and then it becomes fixed (i.e the top value is set to 0 or any number).
+   */
+
+  top: 0;
+  right: 0;
+}
+
+.child-two {
+}
+
+.child-three {
+}
